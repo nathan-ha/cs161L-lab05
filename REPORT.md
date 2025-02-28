@@ -22,10 +22,11 @@ PC: 00000038 | opcode: 00 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr
 # Section 2
 This table differs because of some hazards than occurred. For example in the instruction:
 ```
-add $v1 $v0 $v0
-sw $v1 132($zero)
+lw   $v0, 31($zero) 
+add  $v1, $v0, $v0 
 ```
-We see that the first instruction stores an ALU result into $v1. We then attempt then attempt to store the data in $v1 into memory. This causes a hazard due to the dependency of the second instruction on the first instruction. This causes the pipeline to stall and get interrupted.
+We see that the first instruction stores data into $v0. We then attempt then attempt to use the data in $v0. This causes a hazard due to the dependency of the second instruction on the first instruction. This causes the pipeline to stall and get interrupted. This is called a data hazard.
 
 
 # Section 3
+Inserting the instruction `and $t0, $t0, $zero` would prevent the stall. The hazard and stall would be prevented because it gives the pipeline time to write back data to the registers.
