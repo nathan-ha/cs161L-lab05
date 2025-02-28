@@ -68,7 +68,9 @@ initial begin
     $display("------------------------------------------------------------------");
     for (ticks = 0; ticks < 14; ticks = ticks + 1) begin
         @(posedge clk);
-        $display("PC: %2d opcode: %06b write reg addr: %2d write reg data: %4h", prog_count, instr_opcode, write_reg_addr, write_reg_data);        
+        //$display("PC: %2d opcode: %06b write reg addr: %2d write reg data: %4h", prog_count, instr_opcode, write_reg_addr, write_reg_data); 
+        $display("PC: %2h | opcode: %2h | reg1_addr: %2d | reg1_data: %4h | write reg addr: %2d | write reg data: %4h", prog_count, instr_opcode, reg1_addr, reg1_data, write_reg_addr, write_reg_data); 
+
     end
     $display("------------------------------------------------------------------");
     $finish();
