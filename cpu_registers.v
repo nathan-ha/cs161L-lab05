@@ -1,9 +1,9 @@
 //=========================================================================
 // Name & Email must be EXACTLY as in Gradescope roster!
-// Name: 
-// Email: 
+// Name: Nathan Ha
+// Email: nha023@ucr.edu
 // 
-// Assignment name: 
+// Assignment name: Lab 5
 // Lab section: 
 // TA: 
 // 
