@@ -2,6 +2,7 @@
 
 
 # Section 1
+```
 PC: 00000000 | opcode: 23 | reg1_addr:  0 | reg1_data: xxxxxxxx | write reg addr:  0 | write reg data: 00000000
 PC: 00000004 | opcode: 23 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr:  0 | write reg data: 00000000
 PC: 00000008 | opcode: 00 | reg1_addr:  2 | reg1_data: 00000000 | write reg addr:  0 | write reg data: xxxxxxxx
@@ -17,7 +18,7 @@ PC: 0000002c | opcode: 23 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr
 PC: 00000030 | opcode: 00 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr:  6 | write reg data: 00000000
 PC: 00000034 | opcode: 00 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr: 31 | write reg data: 0000000c
 PC: 00000038 | opcode: 00 | reg1_addr:  0 | reg1_data: 00000000 | write reg addr:  8 | write reg data: 00000000
-
+```
 
 # Section 2
 This table differs because of some hazards than occurred. For example in the instruction:
